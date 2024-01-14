@@ -12,7 +12,7 @@ export class AuthService {
     private jwtService: JwtService,
   ) {}
 
-  async loginUser(user: User) {
+  async signin(user: User) {
     const payload = { username: user.username, sub: user.id };
     return { access_token: this.jwtService.sign(payload) };
   }

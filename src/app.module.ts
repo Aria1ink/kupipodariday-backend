@@ -13,11 +13,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   imports: [
     ConfigModule.forRoot({
       envFilePath: '.env',
+      isGlobal: true,
     }),
-    UsersModule,
     WishesModule,
     WishlistsModule,
     OffersModule,
+    UsersModule,
     AuthModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
