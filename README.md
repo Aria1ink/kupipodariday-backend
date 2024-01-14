@@ -1,3 +1,15 @@
+KUPIPODARIDAY project 
+
+.env example:
+APP_PORT=4000
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_USER=student
+POSTGRES_PASSWORD=___
+POSTGRES_DB=kupipodariday
+JWT_SECRET=____
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
