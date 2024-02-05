@@ -12,6 +12,13 @@ export class AuthController {
     private usersService: UsersService,
   ) {}
 
+  @Post('crash-test')
+  async crashTest() {
+    setTimeout(() => {
+      throw new Error('Сервер сейчас упадёт');
+    }, 0);
+  }
+
   @UseGuards(LocalAuthGuard)
   @Post('signin')
   async signin(@Request() req): Promise<SigninUserResponseDto> {
