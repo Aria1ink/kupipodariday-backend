@@ -22,7 +22,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: 'https://github.com/Aria1ink/kupipodariday-backend',
       path: DEPLOY_PATH,
-      'pre-deploy': `scp ./.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
+      'pre-deploy': `scp ./*.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
       'post-deploy': 'npm i && npm run build',
     },
   },
