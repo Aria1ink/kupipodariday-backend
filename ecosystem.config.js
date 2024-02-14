@@ -20,6 +20,7 @@ module.exports = {
       user: DEPLOY_USER,
       host: DEPLOY_HOST,
       ref: DEPLOY_REF,
+      key: '~/.ssh/id_ed25519',
       repo: 'git@github.com:Aria1ink/kupipodariday-backend.git',
       path: DEPLOY_PATH,
       'pre-deploy': `scp ./.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
