@@ -24,6 +24,7 @@ module.exports = {
       repo: 'git@github.com:Aria1ink/kupipodariday-backend.git',
       path: DEPLOY_PATH,
       'pre-deploy-local': `scp ./.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
+      'pre-deploy': `cd ${DEPLOY_PATH}`,
       'post-deploy': 'npm i && npm run build',
     },
   },
