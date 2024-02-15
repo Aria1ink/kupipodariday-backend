@@ -23,8 +23,8 @@ module.exports = {
       key: '~/.ssh/id_ed25519',
       repo: 'git@github.com:Aria1ink/kupipodariday-backend.git',
       path: DEPLOY_PATH,
-      'pre-deploy-local': `scp ./.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
-      'post-deploy': `npm i && npm run build && cp ${DEPLOY_PATH}/.env ${DEPLOY_PATH}/source`,
+      'pre-deploy-local': `scp ./.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/source`,
+      'post-deploy': `npm i && npm run build`,
     },
   },
 };
