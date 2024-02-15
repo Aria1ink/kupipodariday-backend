@@ -1,4 +1,11 @@
-import { Body, Controller, Post, UseGuards, Request } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Post,
+  UseGuards,
+  Request,
+  Get,
+} from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { CreateUserDto } from 'src/users/dto/create-user.dto';
 import { UsersService } from 'src/users/users.service';
@@ -12,7 +19,7 @@ export class AuthController {
     private usersService: UsersService,
   ) {}
 
-  @Post('crash-test')
+  @Get('crash-test')
   async crashTest() {
     setTimeout(() => {
       throw new Error('Сервер сейчас упадёт');
