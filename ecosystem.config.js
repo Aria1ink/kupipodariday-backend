@@ -12,7 +12,7 @@ module.exports = {
   apps: [
     {
       name: 'kupipodariday-back',
-      script: './dist/app.js',
+      script: './dist/main.js',
     },
   ],
   deploy: {
