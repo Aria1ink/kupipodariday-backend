@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-require('dotenv').config('.env.deploy');
+require('dotenv').config('./.env.deploy');
 
 const {
   DEPLOY_USER,
