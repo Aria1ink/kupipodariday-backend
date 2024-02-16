@@ -1,6 +1,6 @@
 KUPIPODARIDAY project 
 
-IP адрес: 158.160.116.141
+IP адрес: 178.154.200.122
 Frontend: https://arialink.nomoredomainswork.ru/profile
 Backend: https://api.arialink.nomoredomainswork.ru/profile
 
