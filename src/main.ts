@@ -10,7 +10,7 @@ async function bootstrap() {
       'https://api.arialink.nomoredomainswork.ru',
       'https://arialink.nomoredomainswork.ru',
     ],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: [
       'Content-Type',
       'Origin',
