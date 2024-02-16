@@ -1,5 +1,10 @@
 KUPIPODARIDAY project 
 
+IP адрес: 158.160.116.141
+Frontend: https://arialink.nomoredomainswork.ru/profile
+Backend: https://api.arialink.nomoredomainswork.ru/profile
+
+
 .env example:
 APP_PORT=4000
 POSTGRES_HOST=localhost
